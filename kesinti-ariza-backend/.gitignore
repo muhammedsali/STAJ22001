@@ -1,0 +1,41 @@
+# --- Secrets (EN KRİTİK SATIRLAR) ---
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+
+# Sanal ortam
+venv/
+env/
+.venv/
+
+# Veritabanı (local test için sqlite kullanırsan)
+*.db
+*.sqlite3
+
+# Alembic (migration kurunca) - versiyon dosyalarını DEĞİL, sadece
+# yanlışlıkla oluşan geçici dosyaları yok sayıyoruz
+*.pyc
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# İşletim sistemi
+.DS_Store
+Thumbs.db
+
+# Test/coverage (ileride pytest eklersen)
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Loglar
+*.log
